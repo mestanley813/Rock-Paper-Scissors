@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #606E8C;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 500%;
+    padding: 25px;
+    font-family: 'Tourney', cursive;
+}
+
+.score-container {
+    padding-top: 5%;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+}
+
+#playerchoice, #computerchoice{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#player, #computer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+p {
+    font-size: 25px;
+    padding: 25%;
+    margin: auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.btn-container p {
+    padding: 10%;
+}
+
+.button {
+    width: 250px;
+    height: 300px;
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.button img {
+    width: 250px;
+    height: 250px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#modal {
+    position: absolute;
+    background-color: #767676;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    
+}
+
+#restart {
+    cursor: pointer;
+    background-color: #60848C;
+    padding: 5px 10px;
+}
+
+#modal, #restart {
+    font-size: 50px;
+    color: white;
+    border-radius: 10px;
+}
+
+#modal-text {
+    text-align: center;
+}
+
+#modal-text, #modal .btn-container {
+    background-color: #767676;
+}
+
+#playerchoice {
+    transform: scaleX(-1) rotateZ(270deg);;
+}
+
+#computerchoice {
+    transform: rotateZ(270deg);
+}

@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tourney&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <h1>
+        Rock Paper Scissors
+    </h1>
+    <div class="game-container">
+        <h2 id="results" class="result">
+            First to 5 wins!
+        </h2>
+        <div class="score-container">
+            <div id="player">
+                <img id="playerchoice" src="/images/Rock.png" alt="">
+                <p id="player-score">Player: 0</p>
+            </div>
+            <div id="computer">
+                <img id="computerchoice" src="/images/Rock.png" alt="">
+                <p id="computer-score">Computer: 0</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div id="rock" class="button">
+                <img src="images/rock.gif" alt="The Rock"/>
+                <p>Rock</p>
+            </div>
+            <div id="paper" class="button">
+                <img src="images/paper.gif" alt="Hasbulla with money"/>
+                <p>Paper</p>
+            </div>
+            <div id="scissors" class="button">
+                <img src="images/scissors.gif" alt="Scissors walking towards you"/>
+                <p>Scissors</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div id="modal">
+            <h3 id="modal-text">Game over!</h3>
+            <div class="btn-container">
+                <button id="restart">Play Again?</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
 </body>
+
 </html>
